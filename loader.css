@@ -1,0 +1,68 @@
+*{
+    margin:0px;
+}
+
+.head{
+    height:600px ;
+    background-color: #e2e7e6;
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    border:5px solid #e8e8e8;
+    animation:load 1.6s ease-in-out 0s 5 normal;
+    border-top:5px solid #c0c0c0;
+    
+}
+
+@keyframes load{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+
+p{
+   font-size:1.5rem;
+   font-weight: bolder;
+   color:rgb(63, 63, 63);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   animation: hide 0s none 5s infinite normal;
+}
+
+
+@keyframes hide{
+    from{
+        color:rgb(63, 63, 63);
+    }
+    to{
+        color:#e2e7e6
+    }
+}
+.l1{
+    margin-left:13px;
+}
+
+a{
+    position: absolute;
+    bottom:20px;
+    left:10px;
+    /* height:40px;
+    width:60px; */
+    font-size:0.98rem;
+    /* jada kuch fark nhi pada  on 0.85 and 0.98 rem */
+    font-weight: bold;
+}
+.back{
+    height:30px;
+    width:60px;
+}
